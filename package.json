@@ -1,0 +1,13 @@
+{
+  "name": "simple-todos",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --port 3010 --driver-package practicalmeteor:mocha",
+    "test:console": "TEST_CLIENT=0 meteor test --once --port 3010 --driver-package dispatch:mocha"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "meteor-node-stubs": "~0.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+<template name="message">
+  <li>
+    {{#if isOwner}}
+      <button class="delete">&times;</button>
+    {{/if}}
+
+    <span class="text"><strong>{{username}}</strong> - {{text}}</span>
+  </li>
+</template>

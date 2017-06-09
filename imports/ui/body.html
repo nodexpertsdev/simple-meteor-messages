@@ -1,0 +1,21 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Message List ({{messageCount}})</h1>
+
+      {{> loginButtons}}
+
+      {{#if currentUser}}
+        <form class="new-message">
+          <input type="text" name="text" placeholder="Type to add new messages" />
+        </form>
+      {{/if}}
+    </header>
+
+    <ul>
+      {{#each messages}}
+        {{> message}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
